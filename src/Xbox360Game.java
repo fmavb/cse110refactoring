@@ -1,5 +1,5 @@
 
-public class Xbox360Game {
+public class Xbox360Game extends VideoGame {
 	private static double CONSOLE_COST = 249.99 ;
 	private static double CONSOLE_RENTAL_COST = 29.99 ;
 	private static int NUM_DAYS_BASE_PRICE = 3;

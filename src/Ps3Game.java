@@ -1,5 +1,5 @@
 
-public class Ps3Game {
+public class Ps3Game extends VideoGame {
 
 	private static double CONSOLE_COST = 299.99 ;
 	private static double CONSOLE_RENTAL_COST = 29.99 ;
@@ -16,15 +16,18 @@ public class Ps3Game {
 		_gameName = name;
 	}
 
+	@Override
 	public String get_gameName() {
 		return _gameName;
 	}
 
+	@Override
 	public String get_consoleName() {
 		return CONSOLE_NAME;
 	}
 	
 
+	@Override
 	public double getCharge(int _daysRented, boolean _consoleRented) {
 		double result = 0;
 		result += BASE_PRICE;
@@ -35,6 +38,7 @@ public class Ps3Game {
 		return result;
 	}
 	
+	@Override
 	public int getFrequentRenterPoints(int _daysRented, boolean _consoleRented) {
 		if(_consoleRented && _daysRented > NUM_DAYS_BASE_PRICE)
 			return FREQUENT_RENTER_POINTS + _daysRented - NUM_DAYS_BASE_PRICE;

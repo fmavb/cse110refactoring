@@ -1,5 +1,5 @@
 
-public class WiiGame {
+public class WiiGame extends VideoGame{
 	private static double CONSOLE_COST = 199.99 ;
 	private static double CONSOLE_RENTAL_COST = 29.99 ;
 	private static double MODIFIER = .75;
